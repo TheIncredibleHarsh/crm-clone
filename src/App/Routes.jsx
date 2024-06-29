@@ -6,6 +6,7 @@ const AppRoutes = ()=>{
     return (
         <BrowserRouter history={history}>
             <Routes>
+                <Route path="/" element={<Navigate to="/project" />} />
                 <Route path="/project" Component={Project} />
             </Routes>
         </BrowserRouter>
